@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasanha</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container__principal" id="principal">
+        <div class="Container__titulo">
+            <h1 class="titulo">A Andressa vai me dar uma hm... (pensando) lasanha?</h1>
+        </div>  
+        <div class="container__botoes">
+            <a class="botao__sim__link" href="./index2.html"><button class="botao" id="sim">SIM!</button></a>
+            <button class="botao" onmouseover="fuja()" id="nao" >NÃO!</button>
+        </div>
+    </div>
+    <script>
+
+        function fuja() {
+            var botaoNao = document.querySelector("#nao");
+            var containerPrincipal = document.querySelector("#principal");
+
+            var larguraContainer = containerPrincipal.offsetWidth;
+            var alturaContainer = containerPrincipal.offsetHeight;
+
+            var larguraBotao = botaoNao.offsetWidth;
+            var alturaBotao = botaoNao.offsetHeight;
+
+            var maximoLarguraX = larguraContainer - larguraBotao;
+            var maximoLarguraY = alturaContainer - alturaBotao;
+
+            var aleatorioX = Math.floor(Math.random() * maximoLarguraX);
+            var aleatorioY = Math.floor(Math.random() * maximoLarguraY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+    </script>
+</body>
+</html>

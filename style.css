@@ -1,0 +1,95 @@
+:root{
+    --bg: #040D12;
+    --font: #97FFF4 ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container__principal{
+    padding: 12.5rem;
+    border: 4px solid var(--font);
+    border-radius: 1.25rem;
+    margin-top: 1.25rem;
+    position: relative;
+}
+
+.Container__titulo{
+    padding-bottom: 3.125rem;
+    
+}
+
+.titulo{
+    font-size: 3.125rem;
+    color: var(--font);
+}
+
+.container__botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.botao{
+    background-color: var(--bg);
+    color: var(--font);
+    border: 1px solid var(--font);
+    padding: 1.25rem 2.5rem;
+    border-radius: 1.25rem;
+}
+
+
+#sim, .botao__sim__link{
+    position: absolute;
+    margin-right: 18.75rem;
+}
+
+#sim:hover{
+
+    color: var(--bg);
+    background-color: var(--font);
+
+}
+
+#nao{
+    margin-left: 18.75rem;
+    position: absolute;
+}
+
+.container__imagem{
+    display: flex;
+    gap: 1.875rem;
+    padding: 1.25rem;
+}
+
+.img{
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-top: 3.125rem;
+}
+
+/* segunda página*/
+
+.imagem__gato__pagina2{
+    width: 18.75rem;
+    margin-left: 2.5rem;
+    margin-top: 1.875rem;
+}
+
+#voltar:hover{
+
+    color: var(--bg);
+    background-color: var(--font);
+
+}
+
